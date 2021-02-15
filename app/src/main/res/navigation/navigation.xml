@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/coverFragment">
+
+    <fragment
+        android:id="@+id/coverFragment"
+        android:name="com.example.mute.main.CoverFragment"
+        android:label="CoverFragment">
+        <action
+            android:id="@+id/action_coverFragment_to_listFragment"
+            app:destination="@id/listFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.mute.stack.StackFragment"
+        android:label="ListFragment">
+        <action
+            android:id="@+id/action_listFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit" />
+        <action
+            android:id="@+id/action_listFragment_to_addingFragment"
+            app:destination="@id/addingFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+
+            app:popExitAnim="@anim/fragment_fade_exit" />
+        <action
+            android:id="@+id/action_listFragment_to_coverFragment"
+            app:destination="@id/coverFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.mute.settings.SettingsFragment"
+        android:label="SettingsFragment">
+        <action
+            android:id="@+id/action_settingsFragment_to_listFragment"
+            app:destination="@id/listFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.mute.main.MainActivity"
+        android:label="fragment_cover"
+        tools:layout="@layout/fragment_cover" />
+    <fragment
+        android:id="@+id/addingFragment"
+        android:name="com.example.mute.addNew.AddingFragment"
+        android:label="AddingFragment">
+        <action
+            android:id="@+id/action_addingFragment_to_listFragment"
+            app:destination="@id/listFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+</navigation>

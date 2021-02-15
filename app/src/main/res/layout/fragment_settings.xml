@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="48dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/record_name"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/settings_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:paddingTop="24dp"
+                android:text="@string/item_name"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/create_date"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/settings_create_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="@string/itemCreateDate"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reset_every_"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/settings_recurse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="@string/itemResetDuration"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/settings_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="@string/itemTotalDuration"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="36dp"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reversed"
+                android:textColor="@color/white" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/settings_reverse_switch"
+                android:layout_width="64dp"
+                android:layout_height="24dp"
+                android:buttonTint="@color/purple_500"
+                android:checked="true"
+                android:textColorHighlight="@color/purple_500"
+                android:textColorLink="@color/purple_500" />
+
+            <TextView
+                android:id="@+id/settings_remove"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="128dp"
+                android:text="@string/remove"
+                android:textColor="#FF6D00" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/settings_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="24dp"
+            android:text="@string/reset"
+            android:textColor="@color/teal_200" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/exit"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="160dp"
+        android:background="@drawable/ic_alien_pixelated_shape_of_a_digital_game"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="exit"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/exit"
+        app:layout_constraintStart_toStartOf="@+id/exit"
+        app:layout_constraintTop_toBottomOf="@+id/exit" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

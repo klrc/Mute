@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Mute</string>
+    <string name="item_name">itemName</string>
+    <string name="item_description_here">quest description here.</string>
+    <string name="_30m">30m</string>
+    <string name="settings">设置</string>
+    <string name="remove">移除任务</string>
+    <string name="reversed">反转计时</string>
+    <string name="reset">重置</string>
+    <string name="total">总统计时长: </string>
+    <string name="reset_every_">重置周期: </string>
+    <string name="create_date">创建日期: </string>
+    <string name="itemCreateDate">itemCreateDate</string>
+    <string name="itemResetDuration">itemResetDuration</string>
+    <string name="record_name">标记: </string>
+    <string name="itemTotalDuration">itemTotalDuration</string>
+    <string name="add_quest">添加标记</string>
+    <string name="_30_00">00:30:00</string>
+    <string name="_24_00_00">24:00:00</string>
+    <string name="no_title">无标题</string>
+    <string name="hour">hour</string>
+    <string name="_30">30</string>
+    <string name="min">min</string>
+    <string name="s">s</string>
+</resources>
